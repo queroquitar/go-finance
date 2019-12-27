@@ -14,6 +14,7 @@ const (
 
 func newton(guess float64, function func(float64) float64, derivative func(float64) float64, numIt int) (float64, error) {
 	x := guess - function(guess)/derivative(guess)
+	println(x)
 	if math.Abs(x-guess) < Precision {
 		return x, nil
 	} else if numIt >= MaxIterations {
