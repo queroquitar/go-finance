@@ -7,7 +7,7 @@ import (
 
 const (
 	// MaxIterations determines the maximum number of iterations performed by the Newton-Raphson algorithm.
-	MaxIterations = 30
+	MaxIterations = 50
 	// Precision determines how close to the solution the Newton-Raphson algorithm should arrive before stopping.
 	Precision = 1E-6
 )
